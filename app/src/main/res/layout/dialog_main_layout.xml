@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_redius"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="273dp"
         android:layout_height="270dp"
+
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -13,6 +13,8 @@
         android:gravity="left|center_vertical"
         android:layout_marginLeft="50dp"
         android:text="TextView"
+        android:textSize="17sp"
+        android:textColor="#4c4c4c"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

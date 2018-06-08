@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 //                    tutorialDialog.dismiss();
 //                }
 
-            AlertDialog.Builder listDialog = new AlertDialog.Builder(this);
+            AlertDialog.Builder listDialogBuilder = new AlertDialog.Builder(this);
             View dialogView = inflater.inflate(R.layout.dialog_main_layout,null);
 
             ListView dList = (ListView)dialogView.findViewById(R.id.lv_main_dialog_list);
@@ -70,9 +70,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-                listDialog.setView(dialogView);
-                tutorialDialog  = listDialog.create();
+                listDialogBuilder.setView(dialogView);
+                tutorialDialog  = listDialogBuilder.create();
 
+                // 다이얼로그 크기 조절
                 WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
                 lp.copyFrom(tutorialDialog.getWindow().getAttributes());
                 lp.width = 790;
